@@ -15,3 +15,14 @@
 include device/sony/kitakami/BoardConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := E5823
+
+TARGET_KERNEL_SOURCE := kernel/sony/kitakami2
+TARGET_KERNEL_CONFIG := kitakami_defconfig
+
+TW_BRIGHTNESS_PATH := /sys/class/leds/wled/brightness
+TW_MAX_BRIGHTNESS := 4095
+TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone10/temp
+
+TW_THEME := portrait_hdpi
+
+DEVICE_RESOLUTION := 720x1280
